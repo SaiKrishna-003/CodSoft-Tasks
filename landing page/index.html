@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Our Landing Page</h1>
+            <p>Your one-stop solution for all your needs.</p>
+            <a href="#cta" class="btn">Get Started</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#cta">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="features" class="section">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>Feature 1</h3>
+                        <p>Our product offers amazing feature 1 to enhance your experience.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Feature 2</h3>
+                        <p>With feature 2, you get top-notch performance and reliability.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Feature 3</h3>
+                        <p>Feature 3 provides unparalleled convenience and ease of use.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2>Testimonials</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <p>"This is the best product I have ever used. Highly recommend!"</p>
+                        <p class="author">- Jane Doe</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Excellent customer service and an outstanding product!"</p>
+                        <p class="author">- John Smith</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"A must-have for anyone looking for quality and reliability."</p>
+                        <p class="author">- Mary Johnson</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="section">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Contact us today to learn more about our offerings and how we can help you.</p>
+                <a href="google.com" class="btn">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sai Krishna K.J. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
